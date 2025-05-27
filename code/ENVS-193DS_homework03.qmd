@@ -1,0 +1,13 @@
+---
+title: "ENVS-193DS_homework03"
+format: html
+repository: https://github.com/annacote2026/ENVS-193DS_homework-03
+---
+
+# reading in packages
+library(tidyverse)
+library(here)
+library(flextable)
+library(janitor)
+library(readxl)
+
