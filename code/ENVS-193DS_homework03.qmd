@@ -8,7 +8,7 @@ format:
 execute:
   message: false # use this to make sure messages don't show up
   warning: false # use this to make sure warnings don't show up
-repository: https://github.com/annacote2026/ENVS-193DS_homework-03
+repository: https://github.com/annacote2026/ENVS-193DS_homework-03 # link to repository
 ---
 
 ```{r reading-in-packages}
@@ -17,10 +17,27 @@ library(here)
 library(flextable)
 library(janitor)
 library(readxl)
+library(lubridate)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
 ```
 
 
 
 # 1. Personal Data
 
-a. 
+a. I could calculate the frequency of each music genre for each given mood association (positive, negative, and neutral) by counting, because I listen to folk music often when I study, so I think the count for times I have listened to folk music while I'm feeling "neutral" (like focused or tired) will be higher than while I'm feeling "negatively".
+
+b. 
+```{r cleaning}
+personal_data <- read_csv("data/193DS_Personal_Data.csv") |> # starting with my personal data frame
+  clean_names()
+```
+
+
+
+
+
+
+
