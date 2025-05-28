@@ -31,12 +31,12 @@ a. I could calculate the frequency of each music genre for each given mood assoc
 
 b. 
 ```{r cleaning}
-personal_data <- read_csv("data/193DS_Personal_Data.csv") |> # starting with my personal data frame
+personal_data <- read_csv("data/193DS_Personal_Data.csv") |> # reading in my personal data frame and cleaning it
   clean_names()
 ```
 
 ```{r visualizing}
-genre_mood_freq <- personal_data |> 
+genre_mood_freq <- personal_data |> # creating a new object called genre_mood_freq
   count(genre, mood_association)
 # count occurrences of genre and mood association
 
@@ -60,7 +60,20 @@ c. Figure 1. Comparison of the frequency that I listen to different music genres
 
 d. 
 ```{r flextable}
+ft <- genre_mood_freq |> # making a new object called "ft"
+  select(genre, mood_association, n) # selecting only these columns
 
+ flextable(ft) |> # creating a flextable from the new object "ft" created
+  set_caption("Count of Music Genres by Mood") |> # setting a caption for the table
+  set_header_labels(values = list( # relabeling column headers for readability
+    genre = "Genre",
+    mood_association = "Mood Association",
+    n = "Frequency")) |> 
+  theme_box() |> 
+   set_table_properties(align = "center",
+                       layout = "autofit") # centering the table on the page/output and autofitting the layout of it
+
+view(ft)
 ```
 
 
