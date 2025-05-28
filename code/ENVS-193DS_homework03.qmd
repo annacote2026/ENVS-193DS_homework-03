@@ -78,6 +78,9 @@ ft <- genre_mood_freq |> # making a new object called "ft"
 
 ## a. Using the Dear Data project by Giorgi Lupi and Stefanie Posavec as inspiration, I think an affective data visualization for my personal data could look like creating a unique symbol for each data point that encompasses each column and is organized by date and time. Since my data includes music genre I could make each data point be a music note and change certain aspects of the music note to represent the information pertaining to that day of listening, which includes genre, mood, mood association, if I was listening with people, method of listening, selection of music, and if it was a playlist or not. Each music note's position on the graph would be dictated by the date and time that the data was recorded, with moving downwards corresponding to an later date, and moving right corresponding to a later time. Additionally, I would include a legend that describes how to interpret my data visualization depending on the characteristics of the music notes.
 
-## b. 
+## b. ![Sketch](downloads/sketch.pdf)
+
+## c. 
+
 
 
