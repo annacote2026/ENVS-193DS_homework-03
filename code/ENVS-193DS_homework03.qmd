@@ -38,25 +38,30 @@ personal_data <- read_csv("data/193DS_Personal_Data.csv") |> # starting with my 
 ```{r visualizing}
 genre_mood_freq <- personal_data |> 
   count(genre, mood_association)
-# count occurrences
+# count occurrences of genre and mood association
 
-ggplot(genre_mood_freq,
-       aes(x = mood_association,
+ggplot(genre_mood_freq, 
+       aes(x = mood_association, 
            y = n,
-           fill = genre)) +
-  geom_bar(stat = "identity") +
+           fill = genre)) + # assigning variables
+  geom_bar(stat = "identity") + # telling R to use y-values I supply directly
   labs(
     title = "Frequency of Music Genres by Mood Association",
     x = "Mood Association",
     y = "Count",
-    fill = "Genre"
+    fill = "Genre" # rename axes, title, and legend
   ) + 
   theme_minimal() +
-  scale_fill_brewer(palette = "Set2") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  scale_fill_brewer(palette = "Set2") + # choosing a new color palette for the bar chart
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) # angling the x-axis labels to be more readable
 ```
 
 c. Figure 1. Comparison of the frequency that I listen to different music genres between negative, neutral, and positive mood associations, which were self-determined based on my emotions at the time of listening. Stacked bar chart shows individual counts of times listened to each genre during each mood association, as well as total count of times listened to music during each mood association. Folk music exhibited the highest overall listening frequency, and was also the most listened to genre during "negative" and "neutral" moods, whereas house music was the most listened to genre during "positive" moods. Data collected and recorded in personal music listening log (193DS_Personal_Data.xlsx).
+
+d. 
+```{r flextable}
+
+```
 
 
 
