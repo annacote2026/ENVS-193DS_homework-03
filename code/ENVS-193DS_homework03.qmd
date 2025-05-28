@@ -1,13 +1,26 @@
 ---
 title: "ENVS-193DS_homework03"
-format: html
+author: "Anna Cote"
+date: "2025-05-22"
+format:
+  html:
+    toc: true # use this to display a table of contents
+execute:
+  message: false # use this to make sure messages don't show up
+  warning: false # use this to make sure warnings don't show up
 repository: https://github.com/annacote2026/ENVS-193DS_homework-03
 ---
 
-# reading in packages
+```{r reading-in-packages}
 library(tidyverse)
 library(here)
 library(flextable)
 library(janitor)
 library(readxl)
+```
 
+
+
+# 1. Personal Data
+
+a. 
