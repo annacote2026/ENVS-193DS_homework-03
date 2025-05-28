@@ -35,6 +35,26 @@ personal_data <- read_csv("data/193DS_Personal_Data.csv") |> # starting with my 
   clean_names()
 ```
 
+```{r visualizing}
+genre_mood_freq <- personal_data |> 
+  count(genre, mood_association)
+# count occurrences
+
+ggplot(genre_mood_freq,
+       aes(x = mood_association,
+           y = n,
+           fill = genre)) +
+  geom_bar(stat = "identity") +
+  labs(
+    title = "Frequency of Music Genres by Mood Association",
+    x = "Mood Association",
+    y = "Count",
+    fill = "Genre"
+  ) + 
+  theme_minimal() +
+  scale_fill_brewer(palette = "Set2") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
 
 
 
