@@ -2,7 +2,7 @@ Date,Time,Genre,Mood,Mood association,Listening with people?,Method of listening
 4/20,13:00,house,energetic,positive,no,car,manual,yes
 4/20,22:00,alternative,focused,neutral,no,headphones,manual,no
 4/21,17:00,reggae,relaxed,neutral,no,headphones,auto-generated,yes
-4/22,7:30 AM,surf rock,upbeat,positive,no,car,auto-generated,yes
+4/22,7:30,surf rock,upbeat,positive,no,car,auto-generated,yes
 4/22,20:00,reggae,social,positive,yes,car,auto-generated,yes
 4/23,15:20,folk,tired,neutral,no,headphones,auto-generated,yes
 4/24,12:15,folk,tired,neutral,no,car,manual,no
