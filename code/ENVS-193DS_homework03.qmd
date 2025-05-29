@@ -30,7 +30,7 @@ library(ggplot2)
 
 ## b. 
 ```{r cleaning}
-personal_data <- read_csv("../data/193DS_Personal_Data.csv") |> # reading in my personal data frame and cleaning it
+personal_data <- read_csv("data/193DS_Personal_Data.csv") |> # reading in my personal data frame and cleaning it
   clean_names()
 ```
 
