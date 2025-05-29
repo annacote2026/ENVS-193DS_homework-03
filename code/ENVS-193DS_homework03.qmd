@@ -1,9 +1,8 @@
 ---
-title: "ENVS 193DS Homework 03"
+title: "ENVS 193DS Homework 3"
 author: "Anna Cote"
 date: "2025-05-22"
-format:
-  html:
+format: html
     toc: true # use this to display a table of contents
 execute:
   message: false # use this to make sure messages don't show up
@@ -21,11 +20,10 @@ library(lubridate)
 library(tidyr)
 library(dplyr)
 library(ggplot2)
-library(magick)
 ```
 
 
-# 1. Personal Data
+# 1. Personal data
 
 ## a. 
 [I could calculate the frequency of each music genre for each given mood association (positive, negative, and neutral) by counting, because I listen to folk music often when I study, so I think the count for times I have listened to folk music while I'm feeling "neutral" (like focused or tired) will be higher than while I'm feeling "negatively".]
@@ -52,7 +50,7 @@ ggplot(genre_mood_freq,
     y = "Count",
     fill = "Genre" # rename axes, title, and legend
   ) + 
-  theme_minimal() +
+  theme_minimal() + # changing the theme
   scale_fill_brewer(palette = "Set2") + # choosing a new color palette for the bar chart
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) # angling the x-axis labels to be more readable
 ```
@@ -71,7 +69,7 @@ ft <- genre_mood_freq |> # making a new object called "ft"
     genre = "Genre",
     mood_association = "Mood Association",
     n = "Frequency")) |> 
-  theme_box() |> 
+  theme_box() |> # bolding the lines of the table
    set_table_properties(align = "center",
                        layout = "autofit") # centering the table on the page/output and autofitting the layout of it
 ```
@@ -79,7 +77,7 @@ ft <- genre_mood_freq |> # making a new object called "ft"
 # 2. Affective visualization
 
 ## a. 
-[Using the Dear Data project by Giorgi Lupi and Stefanie Posavec as inspiration, I think an affective data visualization for my personal data could look like creating a unique symbol for each data point that encompasses each column and is organized by date and time. Since my data includes music genre I could make each data point be a music note and change certain aspects of the music note to represent the information pertaining to that day of listening, which includes genre, mood, mood association, if I was listening with people, method of listening, selection of music, and if it was a playlist or not. Each music note's position on the graph would be dictated by the date and time that the data was recorded, with moving downwards corresponding to an later date, and moving right corresponding to a later time. Additionally, I would include a legend that describes how to interpret my data visualization depending on the characteristics of the music notes.]
+[Using the Dear Data project by Giorgi Lupi and Stefanie Posavec as inspiration, I think an affective data visualization for my personal data could look like creating a unique symbol for each recorded data point that encompasses each column and is organized by date and time. Since my data includes music genre I could make each data point be a music note and change certain aspects of the music note to represent the information pertaining to that day of listening, which includes genre, mood, mood association, if I was listening with people, method of listening, selection of music, and if it was a playlist or not. Each music note's position on the graph would be dictated by the date and time that the data was recorded, with moving downwards corresponding to an later date, and moving right corresponding to a later time. Additionally, I would include a legend that describes how to interpret my data visualization depending on the characteristics of the music notes.]
 
 ## b. 
 ![Sketch](images/sketch-1.png)
@@ -109,7 +107,7 @@ with red being a positive correlation and blue being a negative correlation betw
 
 ## d.
 
-[If the creators of this Spearman's correlation figure would like to utilize color, I would suggest selecting two colors that would achieve a more effective contrast, so that it is clear which variables exhibit the strongest correlations. Additionally, if possible, a simplified figure could be created by omitting model components, grouping variables, or eliminating correlated variables in order to create a more readable visualization that only displays the most relevant data. In this situation, I think the most viable solution would be to group certain variables and create a ratio between the pollen lipids and protein concentrations, since these were analyzed as response variables for the ANOVA test, so some insight may already be had for their relationship. I think it would also be worthwhile to edit the figure to include the individual underlying data points, which could replace the redundancy that the figure exhibits with its inclusion of repeated correlations in the mirror image of each box over the central red diagonal. By cutting the figure in half along this diagonal and deleting half of the boxes, that space could be utilized instead to display scatterplots using ggpairs() for example. On this same wavelength, it is also an option to replace the red boxes along the central diagonal with a summary statistic because it is not necessary to include the Spearman's correlation of 1 that you get when comparing each variable to itself, and an additional graph would provide additional useful information about each variable.]
+[If the creators of this Spearman's correlation figure would like to utilize color, I would suggest selecting two colors that would achieve a more effective contrast, so that it is clear which variables exhibit the strongest correlations, while also being significant. Additionally, if possible, a simplified figure could be created by omitting model components, grouping variables, or eliminating correlated variables in order to create a more readable visualization that only displays the most relevant data. In this situation, I think the most viable solution would be to group certain variables and create a ratio between the pollen lipids and protein concentrations, since these were analyzed as response variables for the ANOVA test, so some insight may already be had for their relationship. I think it would also be worthwhile to edit the figure to include the individual underlying data points, which could replace the redundancy that the figure exhibits with its inclusion of repeated correlations in the mirror image of each box over the central red diagonal. By cutting the figure in half along this diagonal, and deleting half of the boxes, that space could be utilized instead to display scatterplots using ggpairs(), for example. On this same wavelength, it is also an option to replace the red boxes along the central diagonal with a summary statistic because it is not necessary to include the Spearman's correlation of 1 that you get when comparing each variable to itself, and an additional graph would provide additional useful information about each variable.]
 
 
 
