@@ -23,4 +23,4 @@ This README also exists in the root directory as 'README.md'.
 
 ## Rendered output
 
-The rendered output for the code in this repository is [here](file:///Users/annacote/github/ENVS-193DS_homework-03/code/ENVS-193DS_homework03.html).
+The rendered output for the code in this repository is [here](https:///Users/annacote/github/ENVS-193DS_homework-03/code/ENVS-193DS_homework03.html).
