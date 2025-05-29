@@ -102,3 +102,7 @@ ft <- genre_mood_freq |> # making a new object called "ft"
 
 [The figure shown above represents a correlation matrix demonstrated by a color range,
 with red being a positive correlation and blue being a negative correlation between the variables listed in the caption and in my answer for part a. Although this figure is clear in its visual representation of the correlation between the variables, with an asterisk denoting significant results, as well as the axes being readable, there is no inclusion of the underlying data or summary statistics. The omittance of the individual data points prevents any visual observations of patterns to be made, which is helpful in exploring data that exhibits collinearity, to determine what the best way is to express the results.]
+
+## c.
+
+[While I think that the use of color is helpful for denoting which variables have the strongest correlation (closer to 1.0), it makes the figure appear as visually overwhelming and is misleading in the fact that many of the red boxes with high Spearman's correlations are not statistically significant.]
