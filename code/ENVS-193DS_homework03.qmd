@@ -1,5 +1,5 @@
 ---
-title: "ENVS-193DS_homework03"
+title: "ENVS 193DS Homework 03"
 author: "Anna Cote"
 date: "2025-05-22"
 format:
@@ -9,7 +9,7 @@ execute:
   message: false # use this to make sure messages don't show up
   warning: false # use this to make sure warnings don't show up
 ---
-repository: https://github.com/annacote2026/ENVS-193DS_homework-03 # link to repository
+repository: https://github.com/annacote2026/ENVS-193DS_homework-03
 
 ```{r reading-in-packages}
 library(tidyverse)
@@ -21,13 +21,14 @@ library(lubridate)
 library(tidyr)
 library(dplyr)
 library(ggplot2)
+library(magick)
 ```
-
 
 
 # 1. Personal Data
 
-## a. I could calculate the frequency of each music genre for each given mood association (positive, negative, and neutral) by counting, because I listen to folk music often when I study, so I think the count for times I have listened to folk music while I'm feeling "neutral" (like focused or tired) will be higher than while I'm feeling "negatively".
+## a. 
+[I could calculate the frequency of each music genre for each given mood association (positive, negative, and neutral) by counting, because I listen to folk music often when I study, so I think the count for times I have listened to folk music while I'm feeling "neutral" (like focused or tired) will be higher than while I'm feeling "negatively".]
 
 ## b. 
 ```{r cleaning}
@@ -56,7 +57,8 @@ ggplot(genre_mood_freq,
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) # angling the x-axis labels to be more readable
 ```
 
-## c. Figure 1. Comparison of the frequency that I listen to different music genres between negative, neutral, and positive mood associations, which were self-determined based on my emotions at the time of listening. Stacked bar chart shows individual counts of times listened to each genre during each mood association, as well as total count of times listened to music during each mood association. Folk music exhibited the highest overall listening frequency, and was also the most listened to genre during "negative" and "neutral" moods, whereas house music was the most listened to genre during "positive" moods. Data collected and recorded in personal music listening log (193DS_Personal_Data.xlsx).
+## c. 
+[Figure 1. Comparison of the frequency that I listen to different music genres between negative, neutral, and positive mood associations, which were self-determined based on my emotions at the time of listening. Stacked bar chart shows individual counts of times listened to each genre during each mood association, as well as total count of times listened to music during each mood association. Folk music exhibited the highest overall listening frequency, and was also the most listened to genre during "negative" and "neutral" moods, whereas house music was the most listened to genre during "positive" moods. Data collected and recorded in personal music listening log (193DS_Personal_Data.xlsx).]
 
 ## d. 
 ```{r flextable}
@@ -76,11 +78,15 @@ ft <- genre_mood_freq |> # making a new object called "ft"
 
 # 2. Affective visualization
 
-## a. Using the Dear Data project by Giorgi Lupi and Stefanie Posavec as inspiration, I think an affective data visualization for my personal data could look like creating a unique symbol for each data point that encompasses each column and is organized by date and time. Since my data includes music genre I could make each data point be a music note and change certain aspects of the music note to represent the information pertaining to that day of listening, which includes genre, mood, mood association, if I was listening with people, method of listening, selection of music, and if it was a playlist or not. Each music note's position on the graph would be dictated by the date and time that the data was recorded, with moving downwards corresponding to an later date, and moving right corresponding to a later time. Additionally, I would include a legend that describes how to interpret my data visualization depending on the characteristics of the music notes.
+## a. 
+[Using the Dear Data project by Giorgi Lupi and Stefanie Posavec as inspiration, I think an affective data visualization for my personal data could look like creating a unique symbol for each data point that encompasses each column and is organized by date and time. Since my data includes music genre I could make each data point be a music note and change certain aspects of the music note to represent the information pertaining to that day of listening, which includes genre, mood, mood association, if I was listening with people, method of listening, selection of music, and if it was a playlist or not. Each music note's position on the graph would be dictated by the date and time that the data was recorded, with moving downwards corresponding to an later date, and moving right corresponding to a later time. Additionally, I would include a legend that describes how to interpret my data visualization depending on the characteristics of the music notes.]
 
-## b. ![Sketch](downloads/sketch.pdf)
+## b. 
+![Sketch](images/sketch-1.png)
 
 ## c. 
+![Affective Visualization Draft](images/music.jpg)
+![Affective Visualization Draft](images/music_key.jpg)
 
 
 
