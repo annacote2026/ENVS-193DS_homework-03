@@ -91,5 +91,11 @@ ft <- genre_mood_freq |> # making a new object called "ft"
 
 [My data visualization contains 31 data points from April 20, 2025 to May 27, 2025 which each include what time I started listening to music that day, what genre it was, what mood I was in at that time, if that mood was positive, negative, or neutral, whether I was listening alone or with people, how I was listening to it, and if I searched up the music or if Spotify started playing it automatically for me. I found the creators of the "Dear Data" project, Giorgi Lupi and Stefanie Posavec, to be particularly influential in my creation of this piece because they were able to manipulate data from their personal lives in a unique way that I had never seen before, utilizing specific symbols and colors to represent certain variables. I drew my data visualization with pencil and colored pens on white printer paper, but prior to constructing the final product, I created a sketch, then an outline, and then I used a ruler to create the axes before drawing each individual point with the corresponding colors and symbols, based on my personal data I collected.]
 
+# 3. Statistical critique
 
+## a.
+
+[The statistical tests the authors are using to address their main research question include ANOVA, Kruskal-Wallis, and the Spearman correlation, but I am choosing to focus on the Spearman correlation for this critique, as it corresponds to the figure I previously included in Homework 2. The creation of the included correlation heatmap as seen below, is created as an attempt to answer the question, how are immune peptides, gut microbiota, nutritional intake, and total proteins in honey bee haemolymph interrelated? Specifically, it adresses which variables are significantly correlated either positively or negatively, as well as whether certain microbiota components or nutrients are associated with stronger immune responses or higher protein levels. The use of a Spearman's correlation for this study is valuable as it does not assume the data are normally distributed and will capture correlation between variables even if the relationship is not perfectly linear.]
+
+![Statistical Critique Visualization](images/correlation_figure.png)
 
