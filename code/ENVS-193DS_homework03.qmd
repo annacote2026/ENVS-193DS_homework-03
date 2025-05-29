@@ -87,6 +87,9 @@ ft <- genre_mood_freq |> # making a new object called "ft"
 ## c. 
 ![Affective Visualization Draft](images/music.jpg)
 ![Affective Visualization Draft](images/music_key.jpg)
+## d.
+
+[My data visualization contains 31 data points from April 20, 2025 to May 27, 2025 which each include what time I started listening to music that day, what genre it was, what mood I was in at that time, if that mood was positive, negative, or neutral, whether I was listening alone or with people, how I was listening to it, and if I searched up the music or if Spotify started playing it automatically for me. I found the creators of the "Dear Data" project, Giorgi Lupi and Stefanie Posavec, to be particularly influential in my creation of this piece because they were able to manipulate data from their personal lives in a unique way that I had never seen before, utilizing specific symbols and colors to represent certain variables. I drew my data visualization with pencil and colored pens on white printer paper, but prior to constructing the final product, I created a sketch, then an outline, and then I used a ruler to create the axes before drawing each individual point with the corresponding colors and symbols, based on my personal data I collected.]
 
 
 
